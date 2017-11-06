@@ -1,0 +1,17 @@
+node_modules
+dist
+bundles
+
+*.log
+
+config.json
+
+// files copied from cirrus.core.webui
+index.html
+silent-signin-callback.html
+config/lite-server.config.json
+config/tsconfig-systemjs.json
+config/systemjs.config.js
+config/rollup-shared.config.js
+tasks/inline-assets.js
+tsconfig.json

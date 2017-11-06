@@ -1,0 +1,14 @@
+{
+  "@cirrus/generator-ui": {
+    "module": {
+      "nodeModuleName": "@cirrus/module.catch-em-all.ui",
+      "globalModuleName": "cirrus.module.catch-em-all.ui",
+      "cirrusModuleName": "Cirrus.Module.CatchEmAll.UI",
+      "displayModuleName": "Cirrus Catch Em All Module UI",
+      "selectorPrefix": "cea",
+      "moduleClassName": "CatchEmAll",
+      "moduleFileName": "catch-em-all",
+      "description": "Provides the GUI for Cirrus.Module.CatchEmAll"
+    }
+  }
+}

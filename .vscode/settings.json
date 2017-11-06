@@ -1,0 +1,21 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um Standard- und Benutzereinstellungen zu überschreiben.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "node_modules": true,
+        "dist": true,
+        "bundles": true,
+        "**/*.css": {
+            "when": "$(basename).scss"
+        },
+        "**/*.js": {
+            "when": "$(basename).ts"
+        }
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "html.format.enable": false,
+    "tslint.configFile": "config/tslint.json"
+}

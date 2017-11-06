@@ -1,0 +1,7 @@
+{
+    "AuthorizationEndpoint": "https://raeffs-idsrv.azurewebsites.net/",
+    "AuthorizationClientId": "cirrus.business.portal",
+    "AuthorizationScope": "cirrus",
+    "EnableCirrusSession": true,
+    "DiscoveryEndpoint": "https://raeffs-cm-ui.azurewebsites.net"
+}

@@ -1,0 +1,35 @@
+{
+    // General information
+    "info": {
+        // Id of the package; must be unique within CIRRUS. Might be a GUID.
+        "id": "Cirrus.Module.CatchEmAll.UI",
+        // Display name of the package; used for installer/GUI purposes
+        "display_name": "Cirrus Catch Em All Module UI",
+        // Description of the package; used for installer/GUI
+        "description": "Provides the GUI for Cirrus.Module.CatchEmAll",
+        // Path to the eula file. If set, this file will be automatically be included during packaging.
+        // "terms_and_conditions": "packages/terms_and_conditions.txt",
+        // Version of the manifest; the packager, installer or marketplace should reject
+        // or properly deal with unknown/older versions.
+        "manifest_schema": 1,
+        //The type of the package.
+        "type": "businessui"
+    },
+    "business_user_interface": {
+        "directory": "gui",
+        "filters": [
+            "**",
+            "!package.json",
+            "!.npmrc",
+            "!**/*.d.ts",
+            "!**/*.js.map"
+        ]
+    },
+    "scripts": {
+        "directory": "installer",
+        "filters": [
+            "**/*"
+        ]
+    },
+    "requirements": []
+}

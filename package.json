@@ -1,0 +1,47 @@
+{
+    "name": "@cirrus/module.catch-em-all.ui",
+    "version": "0.0.0-PLACEHOLDER",
+    "description": "Provides the GUI for Cirrus.Module.CatchEmAll",
+    "scripts": {
+        "start": "lite-server -c config/lite-server.config.json",
+        "postinstall": "node tasks/copy-static-content.js",
+        "clean": "rimraf dist && rimraf bundles",
+        "tslint": "tslint --type-check -c config/tslint.json --force --project tsconfig.json",
+        "build": "npm run build:lint && npm run build:tsc && npm run build:assets && npm run build:inline && npm run build:bundle && npm run build:sourcemap && npm run build:pack",
+        "build:lint": "tslint --type-check -c config/tslint.json --project tsconfig.json",
+        "build:tsc": "tsc",
+        "build:assets": "copyfiles src/**/*.html dist && copyfiles src/**/*.css dist",
+        "build:inline": "node tasks/inline-assets.js dist",
+        "build:bundle": "npm run build:bundle:umd && npm run build:bundle:umd:min && npm run build:bundle:declarations",
+        "build:bundle:umd": "rollup -f umd -c config/rollup.config.js -o bundles/cirrus.module.catch-em-all.ui.umd.js",
+        "build:bundle:umd:min": "rollup -f umd -c config/rollup-min.config.js -o bundles/cirrus.module.catch-em-all.ui.umd.min.js",
+        "build:bundle:declarations": "dts-bundle --name @cirrus/module.catch-em-all.ui --main dist/index.d.ts",
+        "build:sourcemap": "npm run build:sourcemap:umd && npm run build:sourcemap:umd:min",
+        "build:sourcemap:umd": "sorcery -i bundles/cirrus.module.catch-em-all.ui.umd.js",
+        "build:sourcemap:umd:min": "sorcery -i bundles/cirrus.module.catch-em-all.ui.umd.min.js",
+        "build:pack": "node tasks/packing.js"
+    },
+    "peerDependencies": {
+        "@cirrus/core.webui": "*",
+        "@cirrus/module.core.ui": "*",
+        "@cirrus/module.core.ui.dashboard": "*"
+    },
+    "devDependencies": {
+        "@cirrus/core.webui": "0.21.0-rev.17304.3",
+        "@cirrus/module.core.ui": "0.21.0-rev.17304.2",
+        "@cirrus/module.core.ui.dashboard": "0.15.0-rev.17220.1",
+        "codelyzer": "4.0.0",
+        "copyfiles": "1.2.0",
+        "dts-bundle": "0.7.3",
+        "fs-extra": "4.0.2",
+        "lite-server": "2.3.0",
+        "plugin-typescript": "7.1.0",
+        "rimraf": "2.6.2",
+        "rollup": "0.50.0",
+        "rollup-plugin-uglify": "2.0.1",
+        "sorcery": "0.10.0",
+        "tslint": "5.8.0",
+        "typescript": "2.5.3"
+    },
+    "dependencies": {}
+}
