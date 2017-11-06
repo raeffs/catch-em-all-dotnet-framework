@@ -1,0 +1,38 @@
+﻿[
+  {
+    "name": "CatchEmAll",
+    "value": "Catch 'Em All"
+  },
+  {
+    "name": "CatchEmAllAdmin",
+    "value": "Catch 'Em All Administration"
+  },
+  {
+    "name": "Categories",
+    "value": "Categories"
+  },
+  {
+    "name": "SearchQueries",
+    "value": "Search Queries"
+  },
+  {
+    "name": "SearchQueriesByCategory",
+    "value": "Search Queries by Category"
+  },
+  {
+    "name": "Schedules",
+    "value": "Schedules"
+  },
+  {
+    "name": "Settings",
+    "value": "Settings"
+  },
+  {
+    "name": "Feedback",
+    "value": "Feedback"
+  },
+  {
+    "name": "QueryExecution",
+    "value": "Query executions"
+  }
+]

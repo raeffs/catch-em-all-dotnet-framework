@@ -1,0 +1,10 @@
+﻿[
+  {
+    "name": "CategoryHasAssignedQueries",
+    "value": "At least one of the selected categories has still queries assigned!"
+  },
+  {
+    "name": "CannotDeleteFeedbackInGivenState",
+    "value": "At least one of the selected feedbacks is in a status other than new and can not be deleted!"
+  }
+]

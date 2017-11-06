@@ -1,0 +1,30 @@
+﻿[
+  {
+    "name": "ImportExisting",
+    "value": "Import existing"
+  },
+  {
+    "name": "UpdateFromSource",
+    "value": "Update"
+  },
+  {
+    "name": "ShowArchive",
+    "value": "Archive"
+  },
+  {
+    "name": "EditQuery",
+    "value": "Edit query"
+  },
+  {
+    "name": "ShowAllExecutions",
+    "value": "All"
+  },
+  {
+    "name": "ShowFailedExecutions",
+    "value": "Failed"
+  },
+  {
+    "name": "ShowRunningExecutions",
+    "value": "Running"
+  }
+]
