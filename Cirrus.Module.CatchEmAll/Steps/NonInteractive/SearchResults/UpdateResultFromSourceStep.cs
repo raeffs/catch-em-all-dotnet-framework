@@ -117,12 +117,21 @@ namespace Cirrus.Module.CatchEmAll.Steps.NonInteractive.SearchResults
 
                 var page = await this.LoadItemPageAsync(result);
 
-                result.Ends = page.Ends;
-                result.Closed = page.Closed;
-                result.Sold = page.Sold;
-                result.BidPrice = page.BidPrice ?? result.BidPrice;
-                result.PurchasePrice = page.PurchasePrice ?? result.PurchasePrice;
-                result.FinalPrice = page.FinalPrice ?? page.FinalPrice;
+                try
+                {
+                    result.Ends = page.Ends;
+                    result.Closed = page.Closed;
+                    result.Sold = page.Sold;
+                    result.BidPrice = page.BidPrice ?? result.BidPrice;
+                    result.PurchasePrice = page.PurchasePrice ?? result.PurchasePrice;
+                    result.FinalPrice = page.FinalPrice ?? page.FinalPrice;
+                }
+                catch
+                {
+                    // todo add log
+                    // we assume the result does no longer exist
+                    result.Closed = true;
+                }
 
                 await context.SaveChangesAsync();
             }

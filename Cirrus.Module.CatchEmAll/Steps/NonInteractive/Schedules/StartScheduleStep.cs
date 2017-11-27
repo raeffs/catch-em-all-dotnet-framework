@@ -51,7 +51,7 @@ namespace Cirrus.Module.CatchEmAll.Steps.NonInteractive.Schedules
 
         public async Task<EdgeDefinition> RunAsync()
         {
-            var scheduleId = (long)this.Batch.Items.First().Parameters["InputScheduleId"];
+            var scheduleId = (long)this.Batch.Items.First().Parameters["Batch"];
 
             using (var context = this.dataAccess.GetContext())
             {
