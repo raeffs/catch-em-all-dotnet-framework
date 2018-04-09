@@ -37,56 +37,74 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Cirrus.Business, Version=0.21.17303.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Business.0.21.17303.3\lib\net461\Cirrus.Business.dll</HintPath>
+    <Reference Include="Cirrus.Business, Version=0.32.18095.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Business.0.32.18095.4\lib\net461\Cirrus.Business.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Business.Interface, Version=0.21.17300.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Business.Interface.0.21.17300.1\lib\net461\Cirrus.Business.Interface.dll</HintPath>
+    <Reference Include="Cirrus.Business.Interface, Version=0.32.18087.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Business.Interface.0.32.18087.1\lib\net461\Cirrus.Business.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Core, Version=0.21.17303.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Core.0.21.17303.1\lib\net461\Cirrus.Core.dll</HintPath>
+    <Reference Include="Cirrus.Core, Version=0.31.18082.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.0.31.18082.1\lib\net461\Cirrus.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Core.DAL, Version=0.21.17299.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Core.DAL.0.21.17299.1\lib\net461\Cirrus.Core.DAL.dll</HintPath>
+    <Reference Include="Cirrus.Core.DAL, Version=0.32.18096.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.DAL.0.32.18096.1\lib\net461\Cirrus.Core.DAL.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Core.Localisation, Version=0.19.17279.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Core.Localisation.0.19.17279.2\lib\net461\Cirrus.Core.Localisation.dll</HintPath>
+    <Reference Include="Cirrus.Core.Localisation, Version=0.29.18047.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.Localisation.0.29.18047.1\lib\net461\Cirrus.Core.Localisation.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Core.Validation, Version=0.13.17198.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Core.Validation.0.13.17198.1\lib\net461\Cirrus.Core.Validation.dll</HintPath>
+    <Reference Include="Cirrus.Core.Validation, Version=0.24.17340.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.Validation.0.24.17340.1\lib\net461\Cirrus.Core.Validation.dll</HintPath>
     </Reference>
     <Reference Include="Cirrus.Deployer, Version=1.17.198.6, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Cirrus.Deployer.1.17.198.6\lib\net461\Cirrus.Deployer.exe</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Engine.Interface, Version=0.21.17303.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Engine.Interface.0.21.17303.2\lib\net461\Cirrus.Engine.Interface.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Interface, Version=0.32.18093.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Engine.Interface.0.32.18093.2\lib\net461\Cirrus.Engine.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Engine.Notification.Adapter, Version=0.21.17303.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Business.0.21.17303.3\lib\net461\Cirrus.Engine.Notification.Adapter.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Notification.Adapter, Version=0.32.18095.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Business.0.32.18095.4\lib\net461\Cirrus.Engine.Notification.Adapter.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Engine.ViewModel, Version=0.21.17303.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Business.0.21.17303.3\lib\net461\Cirrus.Engine.ViewModel.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Templating, Version=0.32.18095.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Business.0.32.18095.4\lib\net461\Cirrus.Engine.Templating.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Engine.Workflow, Version=0.21.17303.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Business.0.21.17303.3\lib\net461\Cirrus.Engine.Workflow.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Templating.BusinessLogic, Version=0.32.18095.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Engine.Templating.BusinessLogic.0.32.18095.1\lib\net461\Cirrus.Engine.Templating.BusinessLogic.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Engine.Workflow.Interface, Version=0.12.17178.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Engine.Workflow.Interface.0.12.17178.1\lib\net461\Cirrus.Engine.Workflow.Interface.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Templating.Dto, Version=0.32.18095.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Engine.Templating.BusinessLogic.0.32.18095.1\lib\net461\Cirrus.Engine.Templating.Dto.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Logging, Version=0.19.17276.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Logging.0.19.17276.4\lib\net461\Cirrus.Logging.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Templating.Interface, Version=0.32.18095.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Engine.Templating.BusinessLogic.0.32.18095.1\lib\net461\Cirrus.Engine.Templating.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Logging.Interface, Version=0.19.17276.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Logging.Interface.0.19.17276.2\lib\net46\Cirrus.Logging.Interface.dll</HintPath>
+    <Reference Include="Cirrus.Engine.ViewModel, Version=0.32.18095.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Business.0.32.18095.4\lib\net461\Cirrus.Engine.ViewModel.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Module.Core, Version=0.21.17299.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Module.Core.0.21.17299.1\lib\net461\Cirrus.Module.Core.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Workflow, Version=0.32.18095.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Business.0.32.18095.4\lib\net461\Cirrus.Engine.Workflow.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Module.Core.DAL, Version=0.21.17299.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Module.Core.DAL.0.21.17299.1\lib\net461\Cirrus.Module.Core.DAL.dll</HintPath>
+    <Reference Include="Cirrus.Engine.Workflow.Interface, Version=0.28.18039.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Engine.Workflow.Interface.0.28.18039.1\lib\net461\Cirrus.Engine.Workflow.Interface.dll</HintPath>
     </Reference>
-    <Reference Include="Cirrus.Module.Core.Interface, Version=0.21.17299.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Cirrus.Module.Core.Interface.0.21.17299.1\lib\net461\Cirrus.Module.Core.Interface.dll</HintPath>
+    <Reference Include="Cirrus.IoT.Device.Printer, Version=0.26.18004.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.IoT.Device.Printer.0.26.18004.2\lib\net461\Cirrus.IoT.Device.Printer.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.IoT.Device.Printer.EPosBuilder, Version=0.30.18064.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.IoT.Device.Printer.EPosBuilder.0.30.18064.4\lib\net461\Cirrus.IoT.Device.Printer.EPosBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Logging, Version=0.30.18064.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Logging.0.30.18064.2\lib\net461\Cirrus.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Logging.Interface, Version=0.30.18059.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Logging.Interface.0.30.18059.4\lib\net46\Cirrus.Logging.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Module.Core, Version=0.32.18093.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Module.Core.0.32.18093.1\lib\net461\Cirrus.Module.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Module.Core.DAL, Version=0.32.18093.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Module.Core.DAL.0.32.18093.1\lib\net461\Cirrus.Module.Core.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Module.Core.Interface, Version=0.32.18093.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Module.Core.Interface.0.32.18093.1\lib\net461\Cirrus.Module.Core.Interface.dll</HintPath>
     </Reference>
     <Reference Include="Cirrus.Services.Core, Version=0.11.17103.3, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Cirrus.Services.Core.0.11.17103.3\lib\net461\Cirrus.Services.Core.dll</HintPath>
@@ -98,46 +116,46 @@
       <HintPath>..\packages\Cirrus.Services.Core.Ext.Contracts.0.11.17103.3\lib\net461\Cirrus.Services.Core.Ext.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Flurl, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Flurl.2.5.0\lib\net40\Flurl.dll</HintPath>
+    <Reference Include="Flurl, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.2.6.0\lib\net45\Flurl.dll</HintPath>
     </Reference>
-    <Reference Include="Flurl.Http, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Flurl.Http.1.2.0\lib\net45\Flurl.Http.dll</HintPath>
+    <Reference Include="Flurl.Http, Version=2.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.Http.2.1.1\lib\net45\Flurl.Http.dll</HintPath>
     </Reference>
-    <Reference Include="FSharp.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\FSharp.Core.4.0.0.1\lib\net40\FSharp.Core.dll</HintPath>
+    <Reference Include="FSharp.Core, Version=4.4.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FSharp.Core.4.1.17\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.2\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.3\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.SignalR.Redis, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.SignalR.Redis.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Redis.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.SignalR.Redis, Version=2.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Redis.2.2.3\lib\net45\Microsoft.AspNet.SignalR.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.AspNet.SignalR.ServiceBus3, Version=2.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.SignalR.ServiceBus3.2.2.2\lib\net45\Microsoft.AspNet.SignalR.ServiceBus3.dll</HintPath>
+    <Reference Include="Microsoft.AspNet.SignalR.ServiceBus3, Version=2.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.ServiceBus3.2.2.3\lib\net45\Microsoft.AspNet.SignalR.ServiceBus3.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Azure.Amqp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.Amqp.2.0.6\lib\net45\Microsoft.Azure.Amqp.dll</HintPath>
+    <Reference Include="Microsoft.Azure.Amqp, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Amqp.2.1.3\lib\net45\Microsoft.Azure.Amqp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Devices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.Devices.1.2.9\lib\net451\Microsoft.Azure.Devices.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Azure.Devices.1.5.1\lib\net451\Microsoft.Azure.Devices.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Devices.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.Devices.Shared.1.0.11\lib\net45\Microsoft.Azure.Devices.Shared.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Azure.Devices.Shared.1.4.1\lib\net451\Microsoft.Azure.Devices.Shared.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Azure.EventHubs, Version=1.0.1.0, Culture=neutral, PublicKeyToken=7e34167dcc6d6d8c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.EventHubs.1.0.1\lib\net451\Microsoft.Azure.EventHubs.dll</HintPath>
+    <Reference Include="Microsoft.Azure.EventHubs, Version=1.1.0.0, Culture=neutral, PublicKeyToken=7e34167dcc6d6d8c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.EventHubs.1.1.0\lib\net461\Microsoft.Azure.EventHubs.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Azure.EventHubs.Processor, Version=1.0.1.0, Culture=neutral, PublicKeyToken=7e34167dcc6d6d8c, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.EventHubs.Processor.1.0.1\lib\net451\Microsoft.Azure.EventHubs.Processor.dll</HintPath>
+    <Reference Include="Microsoft.Azure.EventHubs.Processor, Version=1.1.0.0, Culture=neutral, PublicKeyToken=7e34167dcc6d6d8c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.EventHubs.Processor.1.1.0\lib\net461\Microsoft.Azure.EventHubs.Processor.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.2.0.4\lib\net45\Microsoft.Azure.KeyVault.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Edm, Version=5.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Data.Edm.5.8.2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
@@ -148,26 +166,26 @@
     <Reference Include="Microsoft.Data.Services.Client, Version=5.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Data.Services.Client.5.8.2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.FileSystems, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.FileSystems.3.0.1\lib\net45\Microsoft.Owin.FileSystems.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Host.HttpListener, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.2.1.0\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Host.HttpListener, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.3.1.0\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.Hosting, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Hosting.2.1.0\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Owin.StaticFiles, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.StaticFiles.3.0.1\lib\net45\Microsoft.Owin.StaticFiles.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ServiceBus, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\WindowsAzure.ServiceBus.3.4.6\lib\net45-full\Microsoft.ServiceBus.dll</HintPath>
+      <HintPath>..\packages\WindowsAzure.ServiceBus.4.1.7\lib\net45\Microsoft.ServiceBus.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
@@ -178,17 +196,17 @@
     <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.2.0.0.0\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.3.2.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.WindowsAzure.Storage, Version=8.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\WindowsAzure.Storage.8.1.1\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.9.0.0\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
-    <Reference Include="NeinLinq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=be449d2bc6d51b0b, processorArchitecture=MSIL">
-      <HintPath>..\packages\NeinLinq.2.2.0\lib\net45\NeinLinq.dll</HintPath>
+    <Reference Include="NeinLinq, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be449d2bc6d51b0b, processorArchitecture=MSIL">
+      <HintPath>..\packages\NeinLinq.2.2.1\lib\net45\NeinLinq.dll</HintPath>
     </Reference>
-    <Reference Include="NeinLinq.EntityFramework, Version=2.2.0.0, Culture=neutral, PublicKeyToken=be449d2bc6d51b0b, processorArchitecture=MSIL">
-      <HintPath>..\packages\NeinLinq.EntityFramework.2.2.0\lib\net45\NeinLinq.EntityFramework.dll</HintPath>
+    <Reference Include="NeinLinq.EntityFramework, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be449d2bc6d51b0b, processorArchitecture=MSIL">
+      <HintPath>..\packages\NeinLinq.EntityFramework.2.2.1\lib\net45\NeinLinq.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -209,45 +227,108 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="Owin.Compression, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Owin.Compression.1.0.12\lib\net45\Owin.Compression.dll</HintPath>
+      <HintPath>..\packages\Owin.Compression.1.0.15\lib\net45\Owin.Compression.dll</HintPath>
     </Reference>
     <Reference Include="PCLCrypto, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d4421c8a4786956c, processorArchitecture=MSIL">
       <HintPath>..\packages\PCLCrypto.2.0.147\lib\net45\PCLCrypto.dll</HintPath>
     </Reference>
-    <Reference Include="PInvoke.BCrypt, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
-      <HintPath>..\packages\PInvoke.BCrypt.0.3.2\lib\net40\PInvoke.BCrypt.dll</HintPath>
+    <Reference Include="PInvoke.BCrypt, Version=0.5.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.BCrypt.0.5.111\lib\net45\PInvoke.BCrypt.dll</HintPath>
     </Reference>
-    <Reference Include="PInvoke.Kernel32, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
-      <HintPath>..\packages\PInvoke.Kernel32.0.3.2\lib\net40\PInvoke.Kernel32.dll</HintPath>
+    <Reference Include="PInvoke.Kernel32, Version=0.5.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.Kernel32.0.5.111\lib\net45\PInvoke.Kernel32.dll</HintPath>
     </Reference>
-    <Reference Include="PInvoke.NCrypt, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
-      <HintPath>..\packages\PInvoke.NCrypt.0.3.2\lib\net40\PInvoke.NCrypt.dll</HintPath>
+    <Reference Include="PInvoke.NCrypt, Version=0.5.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.NCrypt.0.5.111\lib\net45\PInvoke.NCrypt.dll</HintPath>
     </Reference>
-    <Reference Include="PInvoke.Windows.Core, Version=0.3.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
-      <HintPath>..\packages\PInvoke.Windows.Core.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Windows.Core.dll</HintPath>
+    <Reference Include="PInvoke.Windows.Core, Version=0.5.0.0, Culture=neutral, PublicKeyToken=9e300f9f87f04a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\PInvoke.Windows.Core.0.5.111\lib\net35\PInvoke.Windows.Core.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
     </Reference>
+    <Reference Include="Scriban, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Scriban.1.0.0\lib\net40\Scriban.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.2.6.0\lib\net46\Serilog.dll</HintPath>
+    </Reference>
     <Reference Include="StackExchange.Redis, Version=1.2.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\StackExchange.Redis.1.2.4\lib\net46\StackExchange.Redis.dll</HintPath>
     </Reference>
-    <Reference Include="StackExchange.Redis.StrongName, Version=1.0.316.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
-      <HintPath>..\packages\StackExchange.Redis.StrongName.1.0.322\lib\net45\StackExchange.Redis.StrongName.dll</HintPath>
+    <Reference Include="StackExchange.Redis.StrongName, Version=1.2.6.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.StrongName.1.2.6\lib\net46\StackExchange.Redis.StrongName.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.Primitives, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Primitives.4.3.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.0.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.1.0\lib\net462\System.IO.dll</HintPath>
+    </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Net" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.WebSockets.4.3.0\lib\net46\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.WebSockets.Client.4.3.2\lib\net46\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.1.0\lib\net462\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.1.0\lib\net462\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.1.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Spatial, Version=5.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Spatial.5.8.2\lib\net40\System.Spatial.dll</HintPath>
     </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.0.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool, Version=4.0.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.ThreadPool.4.0.10\lib\net46\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
     </Reference>
@@ -255,8 +336,8 @@
     <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
@@ -267,8 +348,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Validation, Version=2.2.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Validation.2.2.8\lib\dotnet\Validation.dll</HintPath>
+    <Reference Include="Validation, Version=2.4.0.0, Culture=neutral, PublicKeyToken=2fc06f0d701809a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Validation.2.4.18\lib\net45\Validation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
