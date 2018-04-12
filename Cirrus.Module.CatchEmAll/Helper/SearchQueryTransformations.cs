@@ -15,6 +15,7 @@ namespace Cirrus.Module.CatchEmAll.Helper
             values.Add(WithExactlyTheseWordsKey, e.WithExactlyTheseWords);
             values.Add(WithNoneOfTheseWordsKey, e.WithNoneOfTheseWords);
             values.Add(CategoryKey, e.Category.Number.ToString());
+            values.Add(ConditionKey, ((int)e.Condition).ToString());
 
             var parts = values
                 .Where(kv => !string.IsNullOrWhiteSpace(kv.Value))
@@ -33,5 +34,6 @@ namespace Cirrus.Module.CatchEmAll.Helper
         private static readonly string WithExactlyTheseWordsKey = "SearchFullMatch";
         private static readonly string WithNoneOfTheseWordsKey = "SearchExclude";
         private static readonly string CategoryKey = "CategoryNr";
+        private static readonly string ConditionKey = "ItemCondition";
     }
 }

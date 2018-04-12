@@ -282,5 +282,9 @@
   {
     "name": "DesiredPrice",
     "value": "Desired price"
+  },
+  {
+    "name": "Condition",
+    "value": "Item Condition"
   }
 ]

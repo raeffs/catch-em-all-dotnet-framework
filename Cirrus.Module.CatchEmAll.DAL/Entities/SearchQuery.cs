@@ -47,5 +47,7 @@ namespace Cirrus.Module.CatchEmAll.DAL.Entities
         public decimal? DesiredPrice { get; set; }
 
         public bool Hidden { get; set; }
+
+        public Condition Condition { get; set; }
     }
 }

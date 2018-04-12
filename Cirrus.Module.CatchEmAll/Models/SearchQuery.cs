@@ -77,5 +77,9 @@ namespace Cirrus.Module.CatchEmAll.Models
         [Group(nameof(DataObjects.CatchEmAll_Miscellaneous))]
         [Name(nameof(DataObjects.CatchEmAll_DesiredPrice))]
         public decimal? DesiredPrice { get; set; }
+
+        [Tags(AllowCustomInputs = false)]
+        [Name(nameof(DataObjects.CatchEmAll_Condition))]
+        public Tag Condition { get; set; }
     }
 }

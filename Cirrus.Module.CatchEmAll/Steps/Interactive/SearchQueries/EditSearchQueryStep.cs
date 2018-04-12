@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using Cirrus.Attributes;
@@ -29,68 +30,90 @@ namespace Cirrus.Module.CatchEmAll.Steps.Interactive.SearchQueries
 
         protected override async Task<Models.SearchQuery> LoadAsync()
         {
-            using (var context = this.dataAccess.GetContext())
+            try
             {
-                var categories = await context.NoTracking<DAL.Entities.Category>()
-                    .BelongingToCurrentUser()
-                    .Select(e => new DropDownValue { Id = e.Id, Name = e.Name + " (" + e.Number + ")" })
-                    .ToListAsync();
+                using (var context = this.dataAccess.GetContext())
+                {
+                    var categories = await context.NoTracking<DAL.Entities.Category>()
+                        .BelongingToCurrentUser()
+                        .Select(e => new DropDownValue { Id = e.Id, Name = e.Name + " (" + e.Number + ")" })
+                        .ToListAsync();
 
-                var tags = await context.NoTracking<DAL.Entities.Tag>()
-                    .BelongingToCurrentUser()
-                    .Select(e => new PossibleValue { Id = e.Id.ToString(), Name = e.Name })
-                    .OrderBy(e => e.Name)
-                    .ToListAsync();
+                    var tags = await context.NoTracking<DAL.Entities.Tag>()
+                        .BelongingToCurrentUser()
+                        .Select(e => new PossibleValue { Id = e.Id.ToString(), Name = e.Name })
+                        .OrderBy(e => e.Name)
+                        .ToListAsync();
 
-                var dto = await context.NoTracking<DAL.Entities.SearchQuery>()
-                    .Select(e => new Models.SearchQuery
-                    {
-                        Id = e.Id,
-                        Name = e.Name,
-                        UseDescription = e.UseDescription,
-                        WithAllTheseWords = e.WithAllTheseWords,
-                        WithExactlyTheseWords = e.WithExactlyTheseWords,
-                        WithNoneOfTheseWords = e.WithNoneOfTheseWords,
-                        WithOneOfTheseWords = e.WithOneOfTheseWords,
-                        EnableNotifications = e.EnableNotifications,
-                        NotificationMode = e.NotificationMode,
-                        DesiredPrice = e.DesiredPrice,
-                        AutoFilterDeletedDuplicates = e.AutoFilterDeletedDuplicates,
-                        TagSelection = new Tag
+                    var conditionFlags = Enum.GetValues(typeof(DAL.Entities.Condition)).Cast<DAL.Entities.Condition>().ToList();
+                    var conditions = conditionFlags
+                        .Select(x => new PossibleValue { Id = ((int)x).ToString(), Name = Enum.GetName(typeof(DAL.Entities.Condition), x) })
+                        .ToList();
+
+                    var dto = await context.NoTracking<DAL.Entities.SearchQuery>()
+                        .Select(e => new Models.SearchQuery
                         {
-                            CanAddValues = true,
-                            Values = e.Tags.Select(x => new PossibleValue
+                            Id = e.Id,
+                            Name = e.Name,
+                            UseDescription = e.UseDescription,
+                            WithAllTheseWords = e.WithAllTheseWords,
+                            WithExactlyTheseWords = e.WithExactlyTheseWords,
+                            WithNoneOfTheseWords = e.WithNoneOfTheseWords,
+                            WithOneOfTheseWords = e.WithOneOfTheseWords,
+                            EnableNotifications = e.EnableNotifications,
+                            NotificationMode = e.NotificationMode,
+                            DesiredPrice = e.DesiredPrice,
+                            AutoFilterDeletedDuplicates = e.AutoFilterDeletedDuplicates,
+                            TagSelection = new Tag
                             {
-                                Id = x.Id.ToString(),
-                                Name = x.Name
-                            })
-                            .OrderBy(x => x.Name)
-                            .ToList()
-                        },
-                        CategorySelection = new DropDown
-                        {
-                            Id = e.CategoryId
-                        },
-                        ExecutionCount = e.Executions.Count(),
-                        Executions = e.Executions
-                            .OrderByDescending(x => x.Start)
-                            .Select(x => new Models.ExecutionSummary
+                                CanAddValues = true,
+                                Values = e.Tags.Select(x => new PossibleValue
+                                {
+                                    Id = x.Id.ToString(),
+                                    Name = x.Name
+                                })
+                                .OrderBy(x => x.Name)
+                                .ToList()
+                            },
+                            Condition = new Tag
                             {
-                                Id = x.Id,
-                                Start = x.Start,
-                                End = x.End,
-                                Successful = x.Successful,
-                                IsUserInitiated = x.IsUserInitiated
-                            })
-                            .Take(5)
-                            .ToList()
-                    })
-                    .FirstOrDefaultAsync(e => e.Id == this.Id);
+                                CanAddValues = false,
+                                Values = conditionFlags
+                                    .Where(x => e.Condition.HasFlag(x))
+                                    .Select(x => new PossibleValue { Id = ((int)x).ToString(), Name = string.Empty })
+                                    .ToList()
+                            },
+                            CategorySelection = new DropDown
+                            {
+                                Id = e.CategoryId
+                            },
+                            ExecutionCount = e.Executions.Count(),
+                            Executions = e.Executions
+                                .OrderByDescending(x => x.Start)
+                                .Select(x => new Models.ExecutionSummary
+                                {
+                                    Id = x.Id,
+                                    Start = x.Start,
+                                    End = x.End,
+                                    Successful = x.Successful,
+                                    IsUserInitiated = x.IsUserInitiated
+                                })
+                                .Take(5)
+                                .ToList()
+                        })
+                        .FirstOrDefaultAsync(e => e.Id == this.Id);
 
-                dto.CategorySelection.PossibleValues = categories;
-                dto.TagSelection.PossibleValues = tags;
+                    dto.CategorySelection.PossibleValues = categories;
+                    dto.TagSelection.PossibleValues = tags;
+                    dto.Condition.PossibleValues = conditions;
+                    dto.Condition.Values = dto.Condition.Values.Select(x => conditions.Single(y => x.Id == y.Id)).ToList();
 
-                return dto;
+                    return dto;
+                }
+            }
+            catch (Exception e)
+            {
+                throw;
             }
         }
 
@@ -118,6 +141,8 @@ namespace Cirrus.Module.CatchEmAll.Steps.Interactive.SearchQueries
                     tags.Add(newTag);
                 }
 
+                var condition = dto.Condition.Values.Select(x => (DAL.Entities.Condition)int.Parse(x.Id)).Aggregate((a, b) => a | b);
+
                 entity.Name = dto.Name;
                 entity.UseDescription = dto.UseDescription;
                 entity.WithAllTheseWords = dto.WithAllTheseWords;
@@ -130,6 +155,7 @@ namespace Cirrus.Module.CatchEmAll.Steps.Interactive.SearchQueries
                 entity.AutoFilterDeletedDuplicates = dto.AutoFilterDeletedDuplicates;
                 entity.Tags.Replace(tags);
                 entity.TagValues = string.Join("|", tags.OrderBy(t => t.Name).Select(t => t.Name));
+                entity.Condition = condition;
 
                 await context.SaveChangesAsync();
             }

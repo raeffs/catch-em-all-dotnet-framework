@@ -91,6 +91,7 @@
     <Compile Include="CatchEmAllEntityContextExtensions.cs" />
     <Compile Include="CatchEmAllExtendingContext.cs" />
     <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Condition.cs" />
     <Compile Include="Entities\Feedback.cs" />
     <Compile Include="Entities\FeedbackStatus.cs" />
     <Compile Include="Entities\NotificationMode.cs" />
@@ -162,6 +163,10 @@
     <Compile Include="Migrations\201711031441004_AddedSavedFilter.Designer.cs">
       <DependentUpon>201711031441004_AddedSavedFilter.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804121203266_AddedConditions.cs" />
+    <Compile Include="Migrations\201804121203266_AddedConditions.Designer.cs">
+      <DependentUpon>201804121203266_AddedConditions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Seeder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -216,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711031441004_AddedSavedFilter.resx">
       <DependentUpon>201711031441004_AddedSavedFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804121203266_AddedConditions.resx">
+      <DependentUpon>201804121203266_AddedConditions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ResourceFiles\AlertMessages.json" />
     <EmbeddedResource Include="ResourceFiles\DataObjects.json" />

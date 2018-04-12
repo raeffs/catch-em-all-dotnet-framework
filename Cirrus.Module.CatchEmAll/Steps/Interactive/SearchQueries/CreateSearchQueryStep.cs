@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
@@ -57,6 +58,10 @@ namespace Cirrus.Module.CatchEmAll.Steps.Interactive.SearchQueries
                     .OrderBy(e => e.Name)
                     .ToListAsync();
 
+                var conditions = Enum.GetValues(typeof(DAL.Entities.Condition)).Cast<DAL.Entities.Condition>()
+                    .Select(x => new PossibleValue { Id = ((int)x).ToString(), Name = Enum.GetName(typeof(DAL.Entities.Condition), x) })
+                    .ToList();
+
                 return new Models.SearchQuery
                 {
                     CategorySelection = new DropDown
@@ -72,6 +77,12 @@ namespace Cirrus.Module.CatchEmAll.Steps.Interactive.SearchQueries
                         CanAddValues = true,
                         Values = new List<PossibleValue>(),
                         PossibleValues = tags
+                    },
+                    Condition = new Tag
+                    {
+                        CanAddValues = false,
+                        Values = conditions,
+                        PossibleValues = conditions
                     }
                 };
             }
@@ -99,6 +110,8 @@ namespace Cirrus.Module.CatchEmAll.Steps.Interactive.SearchQueries
                     tags.Add(newTag);
                 }
 
+                var condition = dto.Condition.Values.Select(x => (DAL.Entities.Condition)int.Parse(x.Id)).Aggregate((a, b) => a | b);
+
                 var entity = context.AddAsync(new DAL.Entities.SearchQuery
                 {
                     Name = dto.Name,
@@ -113,7 +126,8 @@ namespace Cirrus.Module.CatchEmAll.Steps.Interactive.SearchQueries
                     DesiredPrice = dto.DesiredPrice,
                     AutoFilterDeletedDuplicates = dto.AutoFilterDeletedDuplicates,
                     Tags = tags,
-                    TagValues = string.Join("|", tags.OrderBy(t => t.Name).Select(t => t.Name))
+                    TagValues = string.Join("|", tags.OrderBy(t => t.Name).Select(t => t.Name)),
+                    Condition = condition
                 });
 
                 await context.SaveChangesAsync();

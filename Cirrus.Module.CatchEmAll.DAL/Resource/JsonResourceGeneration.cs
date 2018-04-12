@@ -31,6 +31,7 @@ namespace Cirrus.Module.CatchEmAll.DAL
 		public static ITranslationItem CatchEmAll_Categories { get; } = new TranslationItem("CatchEmAll_Categories", "DataObjects");    
 		public static ITranslationItem CatchEmAll_Category { get; } = new TranslationItem("CatchEmAll_Category", "DataObjects");    
 		public static ITranslationItem CatchEmAll_Closed { get; } = new TranslationItem("CatchEmAll_Closed", "DataObjects");    
+		public static ITranslationItem CatchEmAll_Condition { get; } = new TranslationItem("CatchEmAll_Condition", "DataObjects");    
 		public static ITranslationItem CatchEmAll_Created { get; } = new TranslationItem("CatchEmAll_Created", "DataObjects");    
 		public static ITranslationItem CatchEmAll_CronExpression { get; } = new TranslationItem("CatchEmAll_CronExpression", "DataObjects");    
 		public static ITranslationItem CatchEmAll_Description { get; } = new TranslationItem("CatchEmAll_Description", "DataObjects");    
