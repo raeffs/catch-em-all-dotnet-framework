@@ -3,6 +3,6 @@
     internal static class BusinessRoles
     {
         public const string AdminRole = "catchemall_admin";
-        public const string UserRole = "user";
+        public const string UserRole = "catchemall_user";
     }
 }
