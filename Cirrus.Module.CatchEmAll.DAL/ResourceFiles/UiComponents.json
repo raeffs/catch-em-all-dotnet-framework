@@ -1,0 +1,26 @@
+﻿[
+  {
+    "name": "ExternalResultDataComponentName",
+    "value": ""
+  },
+  {
+    "name": "ExternalResultDataComponentDescription",
+    "value": ""
+  },
+  {
+    "name": "QueryExecutionStatisticsComponentName",
+    "value": "Query Execution Statistics"
+  },
+  {
+    "name": "QueryExecutionStatisticsComponentDescription",
+    "value": "Displays statistics about the query executions on a hourly, daily or weekly basis."
+  },
+  {
+    "name": "ScheduleStatisticsComponentName",
+    "value": "Schedule Statistics"
+  },
+  {
+    "name": "ScheduleStatisticsComponentDescription",
+    "value": "Displays statistics about the schedules."
+  }
+]

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Cirrus.RuleSet.1.1.0\build\Cirrus.RuleSet.props" Condition="Exists('..\packages\Cirrus.RuleSet.1.1.0\build\Cirrus.RuleSet.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D750225-735B-47DA-8974-35887775DCF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cirrus.Module.CatchEmAll.DAL</RootNamespace>
+    <AssemblyName>Cirrus.Module.CatchEmAll.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\Cirrus.Module.CatchEmAll\Cirrus.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cirrus.Business.Interface, Version=0.32.18087.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Business.Interface.0.32.18087.1\lib\net461\Cirrus.Business.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Core, Version=0.31.18082.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.0.31.18082.1\lib\net461\Cirrus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Core.DAL, Version=0.32.18096.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.DAL.0.32.18096.1\lib\net461\Cirrus.Core.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Core.Localisation, Version=0.29.18047.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.Localisation.0.29.18047.1\lib\net461\Cirrus.Core.Localisation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Core.Validation, Version=0.24.17340.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Core.Validation.0.24.17340.1\lib\net461\Cirrus.Core.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Logging.Interface, Version=0.30.18059.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Logging.Interface.0.30.18059.4\lib\net46\Cirrus.Logging.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrus.Module.Core.DAL, Version=0.32.18093.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Cirrus.Module.Core.DAL.0.32.18093.1\lib\net461\Cirrus.Module.Core.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NeinLinq, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be449d2bc6d51b0b, processorArchitecture=MSIL">
+      <HintPath>..\packages\NeinLinq.2.2.1\lib\net45\NeinLinq.dll</HintPath>
+    </Reference>
+    <Reference Include="NeinLinq.EntityFramework, Version=2.2.1.0, Culture=neutral, PublicKeyToken=be449d2bc6d51b0b, processorArchitecture=MSIL">
+      <HintPath>..\packages\NeinLinq.EntityFramework.2.2.1\lib\net45\NeinLinq.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CatchEmAllEntityContext.cs" />
+    <Compile Include="CatchEmAllEntityContextExtensions.cs" />
+    <Compile Include="CatchEmAllExtendingContext.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Condition.cs" />
+    <Compile Include="Entities\Feedback.cs" />
+    <Compile Include="Entities\FeedbackStatus.cs" />
+    <Compile Include="Entities\NotificationMode.cs" />
+    <Compile Include="Entities\ResultExecution.cs" />
+    <Compile Include="Entities\ExecutionType.cs" />
+    <Compile Include="Entities\IForUser.cs" />
+    <Compile Include="Entities\QueryExecution.cs" />
+    <Compile Include="Entities\SavedFilter.cs" />
+    <Compile Include="Entities\Schedule.cs" />
+    <Compile Include="Entities\SearchQuery.cs" />
+    <Compile Include="Entities\SearchResult.cs" />
+    <Compile Include="Entities\Settings.cs" />
+    <Compile Include="Entities\Tag.cs" />
+    <Compile Include="Entities\UserReference.cs" />
+    <Compile Include="ICatchEmAllEntityContext.cs" />
+    <Compile Include="Migrations\201706211229003_Initial.cs" />
+    <Compile Include="Migrations\201706211229003_Initial.Designer.cs">
+      <DependentUpon>201706211229003_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707041032070_AddedIndexes.cs" />
+    <Compile Include="Migrations\201707041032070_AddedIndexes.Designer.cs">
+      <DependentUpon>201707041032070_AddedIndexes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707101351067_AddedMessageToExecution.cs" />
+    <Compile Include="Migrations\201707101351067_AddedMessageToExecution.Designer.cs">
+      <DependentUpon>201707101351067_AddedMessageToExecution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707121349081_AddedIndexes2.cs" />
+    <Compile Include="Migrations\201707121349081_AddedIndexes2.Designer.cs">
+      <DependentUpon>201707121349081_AddedIndexes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707130552061_AddedIndexes3.cs" />
+    <Compile Include="Migrations\201707130552061_AddedIndexes3.Designer.cs">
+      <DependentUpon>201707130552061_AddedIndexes3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707141155049_NewQueryOptions.cs" />
+    <Compile Include="Migrations\201707141155049_NewQueryOptions.Designer.cs">
+      <DependentUpon>201707141155049_NewQueryOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707180744441_DefaultsForNewQueryOptions.cs" />
+    <Compile Include="Migrations\201707180744441_DefaultsForNewQueryOptions.Designer.cs">
+      <DependentUpon>201707180744441_DefaultsForNewQueryOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707190645385_AddedIfttt.cs" />
+    <Compile Include="Migrations\201707190645385_AddedIfttt.Designer.cs">
+      <DependentUpon>201707190645385_AddedIfttt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708100609396_AddedTags.cs" />
+    <Compile Include="Migrations\201708100609396_AddedTags.Designer.cs">
+      <DependentUpon>201708100609396_AddedTags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708101145356_AddedTagValues.cs" />
+    <Compile Include="Migrations\201708101145356_AddedTagValues.Designer.cs">
+      <DependentUpon>201708101145356_AddedTagValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708291024425_NewFlagsOnResult.cs" />
+    <Compile Include="Migrations\201708291024425_NewFlagsOnResult.Designer.cs">
+      <DependentUpon>201708291024425_NewFlagsOnResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709050937024_AddedNotificationModes.cs" />
+    <Compile Include="Migrations\201709050937024_AddedNotificationModes.Designer.cs">
+      <DependentUpon>201709050937024_AddedNotificationModes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711021314528_AddedHiddenField.cs" />
+    <Compile Include="Migrations\201711021314528_AddedHiddenField.Designer.cs">
+      <DependentUpon>201711021314528_AddedHiddenField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711031441004_AddedSavedFilter.cs" />
+    <Compile Include="Migrations\201711031441004_AddedSavedFilter.Designer.cs">
+      <DependentUpon>201711031441004_AddedSavedFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804121203266_AddedConditions.cs" />
+    <Compile Include="Migrations\201804121203266_AddedConditions.Designer.cs">
+      <DependentUpon>201804121203266_AddedConditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\Seeder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\JsonResourceGeneration.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JsonResourceGeneration.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Cirrus.ruleset" />
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Migrations\201706211229003_Initial.resx">
+      <DependentUpon>201706211229003_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707041032070_AddedIndexes.resx">
+      <DependentUpon>201707041032070_AddedIndexes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707101351067_AddedMessageToExecution.resx">
+      <DependentUpon>201707101351067_AddedMessageToExecution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707121349081_AddedIndexes2.resx">
+      <DependentUpon>201707121349081_AddedIndexes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707130552061_AddedIndexes3.resx">
+      <DependentUpon>201707130552061_AddedIndexes3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707141155049_NewQueryOptions.resx">
+      <DependentUpon>201707141155049_NewQueryOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707180744441_DefaultsForNewQueryOptions.resx">
+      <DependentUpon>201707180744441_DefaultsForNewQueryOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707190645385_AddedIfttt.resx">
+      <DependentUpon>201707190645385_AddedIfttt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708100609396_AddedTags.resx">
+      <DependentUpon>201708100609396_AddedTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708101145356_AddedTagValues.resx">
+      <DependentUpon>201708101145356_AddedTagValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708291024425_NewFlagsOnResult.resx">
+      <DependentUpon>201708291024425_NewFlagsOnResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709050937024_AddedNotificationModes.resx">
+      <DependentUpon>201709050937024_AddedNotificationModes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711021314528_AddedHiddenField.resx">
+      <DependentUpon>201711021314528_AddedHiddenField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711031441004_AddedSavedFilter.resx">
+      <DependentUpon>201711031441004_AddedSavedFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804121203266_AddedConditions.resx">
+      <DependentUpon>201804121203266_AddedConditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceFiles\AlertMessages.json" />
+    <EmbeddedResource Include="ResourceFiles\DataObjects.json" />
+    <EmbeddedResource Include="ResourceFiles\DisplayActions.json" />
+    <EmbeddedResource Include="ResourceFiles\Enums.json" />
+    <EmbeddedResource Include="ResourceFiles\Notifications.json" />
+    <EmbeddedResource Include="ResourceFiles\ValidationErrors.json" />
+    <EmbeddedResource Include="ResourceFiles\WebApplication.json" />
+    <EmbeddedResource Include="ResourceFiles\Navigation.json" />
+    <EmbeddedResource Include="ResourceFiles\UiComponents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\JsonResourceGeneration.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>JsonResourceGeneration.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Cirrus.Analyzers.1.17.87.3\analyzers\dotnet\cs\Cirrus.Analyzers.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Cirrus.RuleSet.1.1.0\build\Cirrus.RuleSet.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Cirrus.RuleSet.1.1.0\build\Cirrus.RuleSet.props'))" />
+  </Target>
+</Project>

@@ -1,0 +1,290 @@
+﻿[
+  {
+    "name": "Category",
+    "value": "Category"
+  },
+  {
+    "name": "Categories",
+    "value": "Categories"
+  },
+  {
+    "name": "Id",
+    "value": "Id"
+  },
+  {
+    "name": "Name",
+    "value": "Name"
+  },
+  {
+    "name": "Number",
+    "value": "Number"
+  },
+  {
+    "name": "NumberOfQueries",
+    "value": "Queries"
+  },
+  {
+    "name": "SearchQuery",
+    "value": "Search query"
+  },
+  {
+    "name": "SearchQueries",
+    "value": "Search queries"
+  },
+  {
+    "name": "AverageFinalPrice",
+    "value": "Average final price"
+  },
+  {
+    "name": "NumberOfResults",
+    "value": "Results"
+  },
+  {
+    "name": "NumberOfOpenResults",
+    "value": "Open results"
+  },
+  {
+    "name": "WithAllTheseWords",
+    "value": "With all these words"
+  },
+  {
+    "name": "WithOneOfTheseWords",
+    "value": "With one of these words"
+  },
+  {
+    "name": "WithExactlyTheseWords",
+    "value": "With exactly these words"
+  },
+  {
+    "name": "WithNoneOfTheseWords",
+    "value": "With none of these words"
+  },
+  {
+    "name": "UseDescription",
+    "value": "Use article description"
+  },
+  {
+    "name": "SearchResult",
+    "value": "Search result"
+  },
+  {
+    "name": "SearchResults",
+    "value": "Search results"
+  },
+  {
+    "name": "Sold",
+    "value": "Sold"
+  },
+  {
+    "name": "Closed",
+    "value": "Closed"
+  },
+  {
+    "name": "Ends",
+    "value": "Ends"
+  },
+  {
+    "name": "Ended",
+    "value": "Ended"
+  },
+  {
+    "name": "BidPrice",
+    "value": "Bid price"
+  },
+  {
+    "name": "PurchasePrice",
+    "value": "Purchase price"
+  },
+  {
+    "name": "FinalPrice",
+    "value": "Final price"
+  },
+  {
+    "name": "Description",
+    "value": "Description"
+  },
+  {
+    "name": "Schedule",
+    "value": "Schedule"
+  },
+  {
+    "name": "Schedules",
+    "value": "Schedules"
+  },
+  {
+    "name": "ExecutionType",
+    "value": "Execution type"
+  },
+  {
+    "name": "IsDefault",
+    "value": "Default?"
+  },
+  {
+    "name": "IsEnabled",
+    "value": "Enabled?"
+  },
+  {
+    "name": "CronExpression",
+    "value": "Cron expression"
+  },
+  {
+    "name": "UpdateIntervalInMinutes",
+    "value": "Update interval (minutes)"
+  },
+  {
+    "name": "LastUpdated",
+    "value": "Updated"
+  },
+  {
+    "name": "Settings",
+    "value": "Settings"
+  },
+  {
+    "name": "Email",
+    "value": "Email"
+  },
+  {
+    "name": "ArchivedSearchResult",
+    "value": "Archived search result"
+  },
+  {
+    "name": "ArchivedSearchResults",
+    "value": "Archived search results"
+  },
+  {
+    "name": "Feedback",
+    "value": "Feedback"
+  },
+  {
+    "name": "Feedbacks",
+    "value": "Feedbacks"
+  },
+  {
+    "name": "Username",
+    "value": "Username"
+  },
+  {
+    "name": "Status",
+    "value": "Status"
+  },
+  {
+    "name": "Created",
+    "value": "Created"
+  },
+  {
+    "name": "EnableEmailNotification",
+    "value": "Enable email notifications (global option)"
+  },
+  {
+    "name": "EnableIftttNotification",
+    "value": "Enable IFTTT notifications (global option)"
+  },
+  {
+    "name": "AlternativeEmail",
+    "value": "Email (alternative)"
+  },
+  {
+    "name": "IftttMakerKey",
+    "value": "IFTTT maker key"
+  },
+  {
+    "name": "IftttMakerEventName",
+    "value": "IFTTT maker event name"
+  },
+  {
+    "name": "Execution",
+    "value": "Execution"
+  },
+  {
+    "name": "Executions",
+    "value": "Executions"
+  },
+  {
+    "name": "Start",
+    "value": "Start"
+  },
+  {
+    "name": "End",
+    "value": "End"
+  },
+  {
+    "name": "Successful",
+    "value": "Successful?"
+  },
+  {
+    "name": "IsUserInitiated",
+    "value": "User initiated?"
+  },
+  {
+    "name": "ExecutionCount",
+    "value": "Execution count"
+  },
+  {
+    "name": "ExternalId",
+    "value": "External Id"
+  },
+  {
+    "name": "ExternalData",
+    "value": "External data"
+  },
+  {
+    "name": "ExternalUrl",
+    "value": "External url"
+  },
+  {
+    "name": "Message",
+    "value": "Message"
+  },
+  {
+    "name": "Miscellaneous",
+    "value": "Miscellaneous"
+  },
+  {
+    "name": "EnableNotifications",
+    "value": "Enable notifications"
+  },
+  {
+    "name": "AutoFilterDeletedDuplicates",
+    "value": "Auto filter deleted duplicates"
+  },
+  {
+    "name": "NotificationsEnabled",
+    "value": "Notifications?"
+  },
+  {
+    "name": "EnableNotificationsDefault",
+    "value": "Enable notifications (default query option)"
+  },
+  {
+    "name": "AutoFilterDeletedDuplicatesDefault",
+    "value": "Auto filter deleted duplicates (default query option)"
+  },
+  {
+    "name": "SettingsUser",
+    "value": "User settings"
+  },
+  {
+    "name": "SettingsQuery",
+    "value": "Query settings"
+  },
+  {
+    "name": "Tags",
+    "value": "Tags"
+  },
+  {
+    "name": "Marker",
+    "value": "Marker"
+  },
+  {
+    "name": "NotificationMode",
+    "value": "Notification mode"
+  },
+  {
+    "name": "DesiredPrice",
+    "value": "Desired price"
+  },
+  {
+    "name": "Condition",
+    "value": "Item Condition"
+  }
+]

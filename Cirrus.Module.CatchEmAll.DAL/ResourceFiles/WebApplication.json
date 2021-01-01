@@ -1,0 +1,34 @@
+﻿[
+  {
+    "name": "Categories",
+    "value": "Categories"
+  },
+  {
+    "name": "OpenExternalUrl",
+    "value": "View on ricardo.ch"
+  },
+  {
+    "name": "QueryExecutionsPastHour",
+    "value": "Query executions for the past hour"
+  },
+  {
+    "name": "QueryExecutionsPastDay",
+    "value": "Query executions for the past day"
+  },
+  {
+    "name": "QueryExecutionsPastWeek",
+    "value": "Query executions for the past week"
+  },
+  {
+    "name": "SearchQueries",
+    "value": "Queries"
+  },
+  {
+    "name": "SearchResults",
+    "value": "Results"
+  },
+  {
+    "name": "Schedules",
+    "value": "Schedules"
+  }
+]
